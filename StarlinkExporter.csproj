@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <!-- From github.com/clarkzjw/starlink-grpc-golang (firmware 2026.09.24.mr87636.5).
+    <!-- From github.com/clarkzjw/starlink-grpc-golang (firmware 2026.10.29.mr90217.1).
          Only messages are generated: their descriptors are the fallback schema when
          the dish has server reflection disabled. -->
     <Protobuf Include="Protos/**/*.proto" ProtoRoot="Protos" GrpcServices="None" />

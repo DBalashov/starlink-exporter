@@ -12,7 +12,7 @@ reflection, encodes the request (`{"get_status": {}}`) and decodes the response 
 schema. As a result, new fields show up in the metrics automatically after a firmware update.
 
 The fallback schema is the `.proto` files from [clarkzjw/starlink-grpc-golang](https://github.com/clarkzjw/starlink-grpc-golang/tree/master/proto)
-in the `Protos/` folder (firmware 2026.09.24.mr87636.5; that repository is licensed under GPL-3.0).
+in the `Protos/` folder (firmware 2026.10.29.mr90217.1; that repository is licensed under GPL-3.0).
 They are compiled into the program and used when the dish responds but has reflection disabled
 (`Unimplemented`), or when `SchemaSource=Embedded` is set. To update them, copy the latest files
 from `proto/spacex_api` in that repository into `Protos/spacex_api` and rebuild.
